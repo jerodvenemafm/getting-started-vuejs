@@ -24,7 +24,7 @@ npm init
     "sharedSecret": "-your-shared-secret-goes-here-"
 }
 ```
-(See below for more info if you need it!)
+(See "Set up your LiveSwitch Application" below for more info if you need it!)
 
 **Step 3**: Run the app!
 ```bash
