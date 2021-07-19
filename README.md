@@ -31,7 +31,7 @@ npm init
 npm run serve
 ```
 
-That's it! For a more detailed setup, please read on.
+That's it! Open 2 copies of the page to see yourself streaming in both directions. For a more detailed setup, please read on.
 
 > New to video streaming? Learn [how LiveSwitch works](https://developer.liveswitch.io/liveswitch-cloud/get-started/intro.html), how it integrates with Single-Page Applications and which protocols it uses.
 
