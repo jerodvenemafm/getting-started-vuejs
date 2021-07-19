@@ -4,17 +4,17 @@ This tutorial demonstrates how to add video streaming to a VueJS application usi
 
 We recommend that you [log in](https://console.liveswitch.io) to follow this quickstart with examples configured for your account.
 
-| I want to integrate into my app | I want to explore a sample app |
-|---|---|
-| 15 minutes | 2 minutes |
-| ToC goes here | Get a sample configured with your account settings or check it out on Github.  Login & Download Sample  View on Github |
-
 `System requirements: Vue 2.6.11 | Vue CLI 4.2.2`
 
+## Quick Start
+Want to get started right this second? To get up and running immediately, just run the following script!
+```
+npx create-liveswitch-vuejs-app
+```
 
-> New to video streaming? Learn How LiveSwitch works, how it integrates with Single-Page Applications and which protocols it uses.
+> New to video streaming? Learn [how LiveSwitch works](https://developer.liveswitch.io/liveswitch-cloud/get-started/intro.html), how it integrates with Single-Page Applications and which protocols it uses.
 
-## Configure your LiveSwitch Application ##
+## Set up your LiveSwitch Application ##
 
 ### Get Your Application ID and Secret ###
 When you signed up for LiveSwitch, a new application was created for you (or you could have created a new one). You will need some details about that application to communicate with Auth0. You can get these details from the [Applications section in the LiveSwitch console](https://console.liveswitch.io/#/applications).
