@@ -7,12 +7,27 @@ We recommend that you [log in](https://console.liveswitch.io) to follow this qui
 `System requirements: Vue 2.6.11 | Vue CLI 4.2.2`
 
 ## Quick Start
-Want to get started right this second? To get up and running immediately, just run the following script!
-```
-npx create-liveswitch-vuejs-app
+Want to get started right this second? Here is the quick version in three steps:
+
+Step 1: Check out this repository
+```bash
+git clone https://github.com/jerodvenemafm/getting-started-vuejs
+cd getting-started-vuejs
+npm init
 ```
 
+Step 2: Configure your application
+Update `liveswitch_config.json` with your Application ID and Shared Secret
+
+Step 3: Run!
+```bash
+npm run serve
+```
+
+That's it! For a more detailed setup, please read on.
+
 > New to video streaming? Learn [how LiveSwitch works](https://developer.liveswitch.io/liveswitch-cloud/get-started/intro.html), how it integrates with Single-Page Applications and which protocols it uses.
+
 
 ## Set up your LiveSwitch Application ##
 
