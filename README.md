@@ -6,7 +6,7 @@ We recommend that you [log in](https://console.liveswitch.io) to follow this qui
 
 `System requirements: Vue 2.6.11 | Vue CLI 4.2.2`
 
-## Quick Start
+## Option 1: Quick Start
 Want to get started right this second? Here is the quick version in three steps:
 
 **Step 1**: Check out this repository
@@ -36,23 +36,27 @@ That's it! Open 2 copies of the page to see yourself streaming in both direction
 > New to video streaming? Learn [how LiveSwitch works](https://developer.liveswitch.io/liveswitch-cloud/get-started/intro.html), how it integrates with Single-Page Applications and which protocols it uses.
 
 
-## Set up your LiveSwitch Application ##
+## Option 2: Walkthrough ##
+This section will guide you step-by-step through the process of building the application outlined above. Here we go!
+
 
 ### Get Your Application ID and Secret ###
-When you signed up for LiveSwitch, a new application was created for you (or you could have created a new one). You will need some details about that application to communicate with Auth0. You can get these details from the [Applications section in the LiveSwitch console](https://console.liveswitch.io/#/applications).
+When you signed up for LiveSwitch, a new application was created for you (or you could have created a new one). You will need some details about that application to communicate with LiveSwitch. You can get these details from the [Applications section in the LiveSwitch console](https://console.liveswitch.io/#/applications). 
+
+First, go to the application list view:
 
 ![Application List](https://i.imgur.com/7Zbf2NY.png)
 <div align="center"><em>Application List</em></div>
 
-Select your application from the list to view its details:
+Next, select your application from the Application List to view its details:
+
 ![Default Application](https://i.imgur.com/cpmYBWo.png)
 <div align="center"><em>Application Settings</em></div>
 
-From this list you will need the Application ID and Shared Secret
-> If you download the sample from the top of this page, these details are filled out for you.
+From this detail view, you will need the Application ID and Shared Secret
 
 ## Create a Sample Application ##
-> The following tutorial creates a new Vue application using the Vue CLI, and presents some common ways to build Vue applications, in terms of its structure and naming conventions. If you are using this guide to integrate the Auth0 SDK into your Vue application, you may need to adjust some of the steps to suit your scenario.
+> The following tutorial creates a new Vue application using the Vue CLI, and presents some common ways to build Vue applications, in terms of its structure and naming conventions. If you are using this guide to integrate the LiveSwitch SDK into your Vue application, you may need to adjust some of the steps to suit your scenario.
 
 If you don't already have an existing application, you can create one using the [Vue CLI](https://cli.vuejs.org/guide/) tool. Using the terminal, find a location on your drive where you want to create the project and run the following commands:
 
@@ -66,6 +70,9 @@ vue create --inlinePreset='{ "useConfigFiles": false, "plugins": { "@vue/cli-plu
 
 # Move into the project directory
 cd my-app
+
+# Start the application
+npm run serve
 ```
 
 ### Install the SDK ###
@@ -74,14 +81,6 @@ After creating a new Vue app using the CLI, install the [LiveSwitch Client SDK](
 
 ```bash
 npm install fm.liveswitch
-```
-
-### Start the application ###
-
-Now start the application from the command line:
-
-```bash
-npm run serve
 ```
 
 At this point, you can leave the application running in the background, as it will reload whenever you make changes.
@@ -107,7 +106,7 @@ export const getInstance = () => instance;
 export const useLiveSwitch = ({
 
     applicationId = '-specify-in-liveswitch_config.json',
-    token = '--generated-on-the-server--',
+    token = '',
     gatewayUrl = 'https://cloud.liveswitch.io',
     // callback for when your local camera/mic are up and running 
     onLocalMediaReady = function(){},

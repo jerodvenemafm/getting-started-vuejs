@@ -7,8 +7,8 @@ let instance;
 export const getInstance = () => instance;
 
 export const useLiveSwitch = ({
-    applicationId = 'dc9b8aff-990f-4de4-8436-5a29ba268015',
-    token = '-generate-on-the-server',
+    applicationId = '-specify-in-liveswitch_config.json',
+    token = '',
     gatewayUrl = 'https://cloud.liveswitch.io',
     onLocalMediaReady = function(){},
     onParticipantJoin = function(){},
