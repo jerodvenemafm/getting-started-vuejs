@@ -16,7 +16,7 @@ cd getting-started-vuejs
 npm init
 ```
 
-**Step 2**: Update `liveswitch_config.json`
+**Step 2**: Update `./liveswitch_config.json`
 ```bash
 {
     "applicationId": "-your-application-id-goes-here-",
