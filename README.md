@@ -9,17 +9,24 @@ We recommend that you [log in](https://console.liveswitch.io) to follow this qui
 ## Quick Start
 Want to get started right this second? Here is the quick version in three steps:
 
-Step 1: Check out this repository
+**Step 1**: Check out this repository
 ```bash
 git clone https://github.com/jerodvenemafm/getting-started-vuejs
 cd getting-started-vuejs
 npm init
 ```
 
-Step 2: Configure your application
-Update `liveswitch_config.json` with your Application ID and Shared Secret
+**Step 2**: Update `liveswitch_config.json`
+```bash
+{
+    "applicationId": "-your-application-id-goes-here-",
+    "channelId": "/room/1",
+    "sharedSecret": "-your-shared-secret-goes-here-"
+}
+```
+(See below for more info if you need it!)
 
-Step 3: Run!
+**Step 3**: Run the app!
 ```bash
 npm run serve
 ```
