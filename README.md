@@ -338,3 +338,5 @@ new Vue({
 ```
 
 Notice that the configuration file created earlier has been imported and used to initialize the plugin, and we are generating a token using that information. By taking this approach, your shared secret is never exposed to the outside world, and you can restrict access based on your application requirements.
+
+That's it! Your app is up and running. To learn more, check out our documentation at [https://developer.liveswitch.io/](https://developer.liveswitch.io/)
