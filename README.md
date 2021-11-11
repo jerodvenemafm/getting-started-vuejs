@@ -13,7 +13,7 @@ Want to get started right this second? Here is the quick version in three steps:
 ```bash
 git clone https://github.com/jerodvenemafm/getting-started-vuejs
 cd getting-started-vuejs
-npm init
+npm install
 ```
 
 **Step 2**: Update `./liveswitch_config.json` with your Application ID and Shared Secret from [console.liveswitch.io](https://console.liveswitch.io/#/applications)
